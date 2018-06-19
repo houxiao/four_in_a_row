@@ -10,7 +10,6 @@ from pygame.locals import *
 
 from config import *
 
-
 def get_human_move(board):
     draggingToken = False
     tokenX, tokenY = None, None
@@ -145,7 +144,7 @@ def animate_computer_moving(board, column):
         draw_board(board, {'x': x, 'y': y, 'color': BLACK})
         pygame.display.update()
         FPSCLOCK.tick()
-        animate_dropping(board, column, BLACK)
+    animate_dropping(board, column, BLACK)
 
 
 def get_lowest_empty_space(board, column):
@@ -247,7 +246,6 @@ def run_games(isFirstGame):
     mainBoard = get_new_board()
 
     while True:
-        print(turn)
         if is_board_full(mainBoard):
             winnerImg = TIEWINNERIMG
             break
