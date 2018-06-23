@@ -2,4 +2,4 @@
 
 board game buklt with pygame
 
-AI with MCTS
+AI with minmax search
